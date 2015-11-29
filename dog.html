@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+	<meta charset= "utf-8">
+	<meta http-equiv= "X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, inital-scale=1">
+<title > Some about dogs</title>
+
+</head>
+
+<h1>Some abaout dogs</h1>
+<style>
+h1{
+	color :#D0F8FF;
+	font-family :'Brush Script MT', cursive ;
+    font-size : 80px;
+    text-shadow :0 0 5px #A5F1FF, 0 0 10px #A5F1FF, 
+                 0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
+                 0 0 40px #A5F1FF;
+    text-align: center;
+}
+body{
+	background-color: black;
+}
+.a{
+	color:white;
+}
+.b{
+	color:white;
+	font-family:impact;
+	font-style: oblique;
+	font-size: 45px;
+}
+.c{
+	border:1px white;
+	border-style:dotted;
+	position:absolute;
+	left:15px;
+	bottom:10px;
+	margin:10px;
+
+}
+.workingcolumn{
+	float: left;
+	width: 34% 
+}
+.petcolumn{display:inline-block;
+           width: 33%
+}
+.friendscolumn{float: right;
+	           width: 33%;
+
+}
+.circleone{
+	background:url(dogc1.jpg) no-repeat;
+	background-size: 500px 400px;
+	background-position:-220px -50px;
+	height:240px;
+	width: 240px;
+	border-radius:50%;
+	overflow:hidden;
+	margin:auto;
+}
+.circletwo{
+	background:url(dogc2.jpg) no-repeat;
+	background-size: 400px 300px;
+	background-position:-120px 0px;
+	height:240px;
+	width: 240px;
+	border-radius:50%;
+	overflow:hidden;
+	margin:auto;
+}
+.circlethree{
+	background:url(dogc3.png) no-repeat;
+	background-size: 400px 300px;
+	background-position:-50px 0px;
+	height:240px;
+	width: 240px;
+	border-radius:50%;
+	overflow:hidden;
+	margin:auto;
+}
+.box-shad{
+	box-shadow: 
+	0 0 150px 20px #000 inset;
+}
+
+.one{
+	font-style:oblique;
+	font-color:#6699ff;
+}
+
+</style>
+<body>
+<div class="container">	
+<div class="workingcolumn a">
+	<div class="circletwo box-shad"></div>
+	Dogs are brilliant as mobility assistant, guides, therapists and rescurers.
+
+</div>
+<div class="petcolumn a">
+	<div class="circleone box-shad"></div>
+	Dogs can act as our dearest pet and someone that we care about.
+</div>
+<div class="friendscolumn a">
+	<div class="circlethree box-shad"></div>
+	Dogs can also be our loyal friends who care for us.
+</div>
+
+<div class = "quiz c">
+<div class="questions b ">
+	Quiz about dogs </div>
+<div class="question one a ">
+		Q: What's the best age to adopt a puppy?</div>
+<select >
+			<option value= "2 weeks of age"> 2 weeks of age </option>
+			<option value= "4 weeks of age">4 weeks of age </option>
+			<option value= "6 weeks of age"> 6 weeks of age</option>
+			<option value= "8 weeks of age">8 weeks of age</option>
+</select>
+		
+<div class="question2 one a ">
+		Q: Can dogs see colours?</div>
+<select>
+			<option value= "Yes">Yes</option>
+			<option value= "No">No</option>
+	</select>
+<form method="get" id="nameform" class="a">
+	First name: <br >
+	<input type= "text" name="firstname">
+    </br>
+	Last name: <br>
+	<input type= "text"name="lastname">
+	</br>
+</form>
+<button type= "submit" form="nameform" value="Submit" >Submit</button>
+
+</div>
+
+</body>
