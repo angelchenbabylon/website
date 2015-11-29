@@ -31,13 +31,18 @@ body{
 	font-size: 45px;
 }
 .c{
-	border:1px white;
+	border:5px white;
 	border-style:dotted;
 	position:absolute;
 	left:15px;
 	bottom:10px;
 	margin:10px;
 
+}
+.e{
+position:absolute;
+left:0px;
+bottom: -10px;
 }
 .workingcolumn{
 	float: left;
@@ -90,6 +95,81 @@ body{
 	font-color:#6699ff;
 }
 
+.gallery{
+	position:relative;
+	bottom:0px;
+	right: 0px;
+    
+}
+.d1{
+   position:relative;
+   bottom:-1000px;
+   left:850px;
+
+}
+.d5{
+	position:relative;
+	top:100px;
+	left:480px;
+}
+.d{
+	position:relative;
+	top:100px;
+}
+.d2{
+	position:relative;
+	left:550px;
+}
+
+.gallery img{
+	width: 300px;
+	height:220px;
+}
+.gallery img:nth-of-type(1){
+	right:50px;
+	top:400px;
+	-webkit-transform:rotate(5deg)
+	transform:rotate(5deg);
+}
+.gallery img:nth-of-type(2) {
+    right: 150px;
+    bottom: 100px;
+    -webkit-transform:rotate(-10deg);
+    transform:rotate(-10deg);
+}
+ 
+.gallery img:nth-of-type(3) {
+    right: 250px;
+    bottom: 50px;
+    -webkit-transform: rotate(7deg);
+    transform:rotate(7deg);
+}
+ 
+.gallery img:nth-of-type(4) {
+    right: 350px;
+    bottom: 150px;
+    -webkit-transform:rotate(-3deg);
+    transform:rotate(-3deg);
+}
+ 
+.gallery img:nth-of-type(5) {
+    right: 450px;
+    bottom: 50px;
+    -webkit-transform:rotate(2deg);
+    transform:rotate(2deg);
+}
+.gallery img:hover{
+	-webkit-transform: rotate(380deg) scale(1.5);
+	transform:rotate(380deg) scale(1.5);
+	z-index: 10;
+}   
+.gallery img{
+	-webkit-transition:all 2s ease-out;
+	transition:all 2s ease-out;
+	padding:10px 10px 20px 10px;
+	background:white;
+    border:solid 1px black;
+}
 </style>
 <body>
 <div class="container">	
@@ -136,5 +216,15 @@ body{
 <button type= "submit" form="nameform" value="Submit" >Submit</button>
 
 </div>
+<a href="MyBestFriendTheDogSong.mp3" class="e" >Play Music</a>
 
+<div class="gallery">
+	<img src="dogsg1.jpg" class="d1"/>
+	<img src="dogsg2.jpg" class="d d2"/>
+	<img src="dogsg3.jpg" class="d d3"/>
+	<img src="dogsg4.jpg" class="d d4"/>
+	<img src="dogsg5.jpg" class="d5"/>
+<style>
+
+</style></div>
 </body>
