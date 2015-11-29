@@ -13,7 +13,7 @@
 h1{
 	color :#D0F8FF;
 	font-family :'Brush Script MT', cursive ;
-    font-size : 80px;
+    font-size : 100px;
     text-shadow :0 0 5px #A5F1FF, 0 0 10px #A5F1FF, 
                  0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
                  0 0 40px #A5F1FF;
@@ -29,7 +29,7 @@ body{
 	color:white;
 	font-family:impact;
 	font-style: oblique;
-	font-size: 45px;
+	font-size: 60px;
 }
 .c{
 	border:5px white;
@@ -94,6 +94,7 @@ bottom: -10px;
 .one{
 	font-style:oblique;
 	font-color:#6699ff;
+
 }
 
 .gallery{
@@ -111,7 +112,7 @@ bottom: -10px;
 .d5{
 	position:relative;
 	top:100px;
-	left:480px;
+	left:520px;
 }
 .d{
 	position:relative;
@@ -121,7 +122,11 @@ bottom: -10px;
 	position:relative;
 	left:550px;
 }
-
+.d6{
+	position:relative;
+	left:-100px;
+	top:100px;
+}
 .gallery img{
 	width: 300px;
 	height:220px;
@@ -194,18 +199,29 @@ bottom: -10px;
 <div class="question one a ">
 		Q: What's the best age to adopt a puppy?</div>
 <select >
+	       <option value="DN">don't know </option>
 			<option value= "2 weeks of age"> 2 weeks of age </option>
 			<option value= "4 weeks of age">4 weeks of age </option>
-			<option value= "6 weeks of age"> 6 weeks of age</option>
-			<option value= "8 weeks of age">8 weeks of age</option>
+			<option value= "6 weeks of age"> 6 weeks of age </option>
+			<option value= "8 weeks of age">8 weeks of age </option>
 </select>
 		
-<div class="question2 one a ">
+<div class="question one a ">
 		Q: Can dogs see colours?</div>
 <select>
-			<option value= "Yes">Yes</option>
-			<option value= "No">No</option>
+	        <option value="DN">don't know </option>
+			<option value= "Yes">Yes </option>
+			<option value= "No">No </option>
 	</select>
+<div class="question one a">
+	Q: How many teeth do dogs have? </div>
+<select>
+	   <option value="DN"> don't know </option>
+	   <option value="22"> 22 </option>
+	   <option value="32"> 32 </option>
+	   <option value="28"> 28 </option>
+	   <option value="42"> 42 </option>
+</select>
 <form method="get" id="nameform" class="a">
 	First name: <br >
 	<input type= "text" name="firstname">
@@ -225,6 +241,7 @@ bottom: -10px;
 	<img src="dogsg3.jpg" class="d d3"/>
 	<img src="dogsg4.jpg" class="d d4"/>
 	<img src="dogsg5.jpg" class="d5"/>
+	<img src="dogsg6.jpg" class="d6"/>
 <style>
 
 </style></div>
