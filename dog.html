@@ -150,13 +150,15 @@ bottom: -10px;
 .gallery img:nth-of-type(1){
 	right:50px;
 	top:400px;
-	-webkit-transform:rotate(5deg)
+	-webkit-transform:rotate(5deg);
+	-moz-transform:rotate(5deg);
 	transform:rotate(5deg);
 }
 .gallery img:nth-of-type(2) {
     right: 150px;
     bottom: 100px;
     -webkit-transform:rotate(-10deg);
+    -moz-transform:rotate(-10deg);
     transform:rotate(-10deg);
 }
  
@@ -164,6 +166,7 @@ bottom: -10px;
     right: 250px;
     bottom: 50px;
     -webkit-transform: rotate(7deg);
+    -moz-transform: rotate(7deg);
     transform:rotate(7deg);
 }
  
@@ -171,6 +174,7 @@ bottom: -10px;
     right: 350px;
     bottom: 150px;
     -webkit-transform:rotate(-3deg);
+    -moz-transfrom:rotate(-3deg);
     transform:rotate(-3deg);
 }
  
@@ -178,15 +182,18 @@ bottom: -10px;
     right: 450px;
     bottom: 50px;
     -webkit-transform:rotate(2deg);
+    -moz-transform:rotate(2deg);
     transform:rotate(2deg);
 }
 .gallery img:hover{
 	-webkit-transform: rotate(380deg) scale(1.5);
+	-moz-transform:rotate(380deg) scale(1.5);
 	transform:rotate(380deg) scale(1.5);
 	z-index: 10;
 }   
 .gallery img{
 	-webkit-transition:all 2s ease-out;
+	-moz--transition:all 2s ease-out;
 	transition:all 2s ease-out;
 	padding:10px 10px 20px 10px;
 	background:white;
