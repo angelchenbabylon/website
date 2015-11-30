@@ -1,9 +1,31 @@
-<!The music button won't work once I relocate it. Why? Can I stay on the website when I click the button?>
+
 <html lang="en">
 <head>
 	<meta charset= "utf-8">
 	<meta http-equiv= "X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, inital-scale=1">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#index.html">Absolutely Astonishing Animals!</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="dog.html">Delicious Doggies!</a></li>
+            <li><a class="active" href="Insects.html">Impressive Insects!</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 <title > Some about dogs</title>
 
 </head>
@@ -36,7 +58,7 @@ body{
 	border-style:dotted;
 	position:absolute;
 	left:15px;
-	bottom:10px;
+	bottom:-150px;
 	margin:10px;
 
 }
@@ -97,26 +119,20 @@ bottom: -10px;
 
 }
 
-.gallery{
-	position:relative;
-	bottom:0px;
-	right: 0px;
-    
-}
 .d1{
    position:relative;
-   bottom:-1000px;
+   bottom:-100px;
    left:850px;
 
 }
 .d5{
 	position:relative;
-	top:100px;
+	top:200px;
 	left:550px;
 }
 .d{
 	position:relative;
-	top:100px;
+	bottom:-200px;
 }
 .d2{
 	position:relative;
@@ -125,7 +141,7 @@ bottom: -10px;
 .d6{
 	position:relative;
 	left:-100px;
-	top:100px;
+	bottom:-100px;
 }
 .gallery img{
 	width: 300px;
@@ -176,6 +192,10 @@ bottom: -10px;
 	background:white;
     border:solid 1px black;
 }
+.f {
+	position:relative;
+	bottom:-400px;
+}
 </style>
 <body>
 <div class="container">	
@@ -197,49 +217,88 @@ bottom: -10px;
 <div class="questions b ">
 	Quiz about dogs </div>
 <div class="question one a ">
-		Q: What's the best age to adopt a puppy?</div>
-<select >
+		Q: What's the best age to adopt a puppy?
+<select>
 	       <option value="DN">don't know </option>
 			<option value= "2 weeks of age"> 2 weeks of age </option>
 			<option value= "4 weeks of age">4 weeks of age </option>
 			<option value= "6 weeks of age"> 6 weeks of age </option>
 			<option value= "8 weeks of age">8 weeks of age </option>
-</select>
+</select></div>
 		
 <div class="question one a ">
-		Q: Can dogs see colours?</div>
+		Q: Can dogs see colours?
 <select>
 	        <option value="DN">don't know </option>
 			<option value= "Yes">Yes </option>
 			<option value= "No">No </option>
-	</select>
+	</select></div>
 <div class="question one a">
-	Q: How many teeth do dogs have? </div>
+	Q: How many teeth do dogs have? 
 <select>
 	   <option value="DN"> don't know </option>
 	   <option value="22"> 22 </option>
 	   <option value="32"> 32 </option>
 	   <option value="28"> 28 </option>
 	   <option value="42"> 42 </option>
-</select>
-<form method="get" id="nameform" class="a">
+</select></div>
+<div class="question one a">
+	Q: Why do dogs have wet nose?
+<select>
+	<option value="DN">don't know </option>
+	<option value="sweat">Because they sweat</option>
+	<option value="chemical">Because it helps to absorb scent chemicals</option>
+</select></div>
+<div class="question one a">
+	Q: How many dogs are there in the world? (approximately?)
+<select>
+	<option value="DN">don't know </option>
+	<option value="one">One Trillion</option>
+	<option value="two">Two millions</option>
+	<option value="three">Fifteen millions</option>
+	<option value="four">Four-hundred millions</option>
+</select></div>
+<div class="question one a">
+	Q: What is the most popular breed?
+<select>
+	<option value="DN">don't know </option>
+	<option value="L">Labrador</option>
+	<option value="G">Golden Retriever</option>
+	<option value="C">Corgi</option>
+	<option value="CH">Chihuahua</option>
+</select></div>
+<div class="question one a">
+	Q:How good can dogs hear?
+<select>
+	<option value="DN">don't know </option>
+	<option value="abc">As good as human</option>
+	<option value="abc2">1.5 times distance from the source than human</option>
+	<option value="abc3">4 times the distance</option>
+</select></div>
+
+
+</div>
+
+<form method="get" id="nameform" class="a f">
+	<p>something about you</p>
 	First name: <br >
 	<input type= "text" name="firstname">
     </br>
 	Last name: <br>
 	<input type= "text"name="lastname">
 	</br>
-</form>
+
 <button type= "submit" form="nameform" value="Submit" >Submit</button>
 
-</div>
-<a href="MyBestFriendTheDogSong.mp3" >Play Music</a>
+<audio controls>
+	<source src="MyBestFriendTheDogSong.mp3" type="audio/mpeg"></audio>
+</form>
 
 <div class="gallery">
 	<img src="dogsg1.jpg" class="d1"/>
-	<img src="dogsg2.jpg" class="d d2"/>
-	<img src="dogsg3.jpg" class="d d3"/>
-	<img src="dogsg4.jpg" class="d d4"/>
+	<img src="dogsg2.jpg" class="d2"/>
+	<img src="dogsg3.jpg" class="d3"/>
+	<img src="dogsg4.jpg" class="d4"/>
 	<img src="dogsg5.jpg" class="d5"/>
 	<img src="dogsg6.jpg" class="d6"/>
 <style>
